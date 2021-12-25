@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.progress.ShowProgress">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:id="@+id/cancel_show"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/show_stock_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Stock Name"
+                android:fontFamily="@font/bungee"
+                android:textSize="19sp"
+                android:textColor="#3ab876"
+                />
+
+
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_for_image_show"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="15dp"
+            android:background="#242424"
+            >
+
+            <ImageView
+                android:id="@+id/show_stock_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:scaleType="fitXY"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/show_stock_profit_loss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:textSize="17sp"
+            android:fontFamily="@font/new_rocker"
+            android:layout_marginEnd="10dp"
+            android:text="Profit: " />
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/bungee"
+            android:textColor="#284C6C"
+            android:layout_marginEnd="10dp"
+            android:text="Learning outcome"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/show_stock_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_editext_button"
+            android:paddingStart="10dp"
+            android:textSize="15sp"
+            android:paddingTop="5dp"
+            android:fontFamily="@font/carme"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/mistake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="Mistakes"
+            android:textSize="16sp"
+            android:textColor="#284D6E"
+            android:fontFamily="@font/bungee"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/show_stock_mistake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_editext_button"
+            android:paddingStart="10dp"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:fontFamily="@font/carme"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
