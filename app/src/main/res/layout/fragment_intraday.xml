@@ -6,80 +6,101 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginTop="30dp"
     android:background="@drawable/recycler_view_background"
-    tools:context=".ui.intraday.IntraDayFragment">
+    tools:context=".stocks.ui.IntraDayFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/intra_day_stock_breakout"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            app:cardElevation="10dp"
-            app:cardBackgroundColor="#AE0F1E17"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:layout_margin="50dp"
-            app:cardCornerRadius="18dp">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="5dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/intra_day_stock_breakout"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#AE0F1E17"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="10dp">
 
 
                 <TextView
                     android:id="@+id/intraday_stocks"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:fontFamily="@font/new_rocker"
-                    android:gravity="center"
                     android:text="@string/stocks_ind"
                     android:textColor="#3ab876"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
 
+            </androidx.cardview.widget.CardView>
 
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/intra_day_indices_breakout"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            app:cardElevation="10dp"
-            app:cardBackgroundColor="#AE0F1E17"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackgroundBorderless"
-            android:layout_margin="50dp"
-            app:cardCornerRadius="18dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="5dp">
-
+            <androidx.cardview.widget.CardView
+                android:id="@+id/intra_day_indices_breakout"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                app:cardBackgroundColor="#AE0F1E17"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="10dp">
 
                 <TextView
                     android:id="@+id/intra_day_indices"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:fontFamily="@font/new_rocker"
-                    android:gravity="center"
                     android:text="@string/indices_ind"
                     android:textColor="#3ab876"
-                    android:textSize="30sp" />
+                    android:textSize="20sp" />
 
 
-            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/swing_stock_breakout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#AE0F1E17"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="10dp">
+
+
+            <TextView
+                android:id="@+id/swing_stocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/new_rocker"
+                android:text="SWING TRADES"
+                android:textColor="#3ab876"
+                android:textSize="20sp" />
 
         </androidx.cardview.widget.CardView>
+
 
     </LinearLayout>
 

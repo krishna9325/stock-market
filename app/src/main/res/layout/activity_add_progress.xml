@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:scrollbars="none"
     android:background="#3ab876"
-    tools:context=".ui.progress.AddProgressActivity"
+    tools:context=".progress.AddProgressActivity"
     >
 
     <LinearLayout
