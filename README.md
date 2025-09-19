@@ -2,7 +2,7 @@
 
 <p align="center">
   <!-- Replace with actual image paths -->
-  <img src="screenshots/stock.jpg" alt="Home Screen" width="250"/>
+  <img src="stock.jpg" alt="Home Screen" width="250"/>
 </p>
 
 ---
